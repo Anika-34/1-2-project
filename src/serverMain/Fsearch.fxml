@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: #cfe2f3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serverMain.FSearchController">
+   <children>
+      <MenuButton fx:id="SearchBy" alignment="CENTER" contentDisplay="CENTER" layoutX="455.0" layoutY="23.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="116.0" text="Search By" textFill="#29729c">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+         <items>
+            <MenuItem fx:id="name" mnemonicParsing="false" onAction="#byName" text="By Name" />
+            <MenuItem fx:id="Category" mnemonicParsing="false" onAction="#byCategory" text="By Category" />
+            <MenuItem fx:id="PriceRange" mnemonicParsing="false" onAction="#byPrice" text="By Price Range" />
+            <MenuItem fx:id="Show" mnemonicParsing="false" onAction="#ShowAll" text="Total Food Item" />
+         </items>
+      </MenuButton>
+      <TextField fx:id="SearchField" layoutX="225.0" layoutY="77.0" opacity="0.0" prefHeight="26.0" prefWidth="316.0" />
+      <Text fx:id="ShowText" layoutX="22.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="189.4830722808838">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font></Text>
+      <Button fx:id="BackButton" layoutX="22.0" layoutY="462.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="40.0" prefWidth="92.0" text="Back" textFill="#29729c">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font></Button>
+      <TextField fx:id="SearchField2" layoutX="225.0" layoutY="122.0" opacity="0.0" prefHeight="26.0" prefWidth="316.0" />
+      <Text fx:id="showText2" layoutX="22.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="173.9830722808838">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="SearchButton" layoutX="549.0" layoutY="102.0" mnemonicParsing="false" onAction="#SearchFood" prefHeight="40.0" prefWidth="77.0" text="Search" textFill="#29729c">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="TableView" layoutX="22.0" layoutY="207.0" prefHeight="136.0" prefWidth="376.0" style="-fx-background-color: #6fa8dc;">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="Name" prefWidth="109.0" text="Name" />
+            <TableColumn fx:id="Price" prefWidth="79.0" text="Price" />
+            <TableColumn fx:id="Catagories" prefWidth="109.0" text="Category" />
+         </columns>
+      </TableView>
+      <CheckBox fx:id="checkBox" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#SeachInRestaurantChecked" text="Search in a specific Restaurant" textFill="#29729c">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <Text fx:id="showText3" layoutX="22.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="173.9830722808838">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="SearchField3" layoutX="225.0" layoutY="162.0" opacity="0.0" prefHeight="25.0" prefWidth="316.0" />
+      <TextArea fx:id="textArea" editable="false" layoutX="435.0" layoutY="207.0" opacity="0.0" prefHeight="136.0" prefWidth="237.0" />
+      <TextArea fx:id="CartTextArea" editable="false" layoutX="139.0" layoutY="360.0" opacity="0.0" prefHeight="136.0" prefWidth="345.0" style="-fx-background-color: #84AAC7;" text="MY CART :">
+         <font>
+            <Font name="Calibri Italic" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="ConfirmOrderButton" layoutX="541.0" layoutY="456.0" mnemonicParsing="false" onAction="#ConfirmOrderAction" opacity="0.0" prefHeight="40.0" prefWidth="92.0" text="Confirm">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

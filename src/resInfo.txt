@@ -1,0 +1,10 @@
+McDonalds,13
+IHOP,12
+abc,78
+Haji Biriyani,56
+KFC,123
+Yum Cha,100
+Starbucks,14
+BFC,79
+Chillox,45
+hello,9087

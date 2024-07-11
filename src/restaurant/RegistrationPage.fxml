@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d9ead3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.registrationController">
+   <children>
+      <Text layoutX="37.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name :" wrappingWidth="122.6181640625">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="169.0" layoutY="24.0" prefHeight="25.0" prefWidth="262.0" promptText="name" />
+      <Text layoutX="37.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Score :" wrappingWidth="122.6181640625">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Price :" wrappingWidth="122.6181640625">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter zip :" wrappingWidth="122.6181640625">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Categories :" wrappingWidth="122.6181640625">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="score" layoutX="169.0" layoutY="60.0" prefHeight="25.0" prefWidth="262.0" promptText="4.3" />
+      <TextField fx:id="cat1" layoutX="169.0" layoutY="167.0" prefHeight="25.0" prefWidth="262.0" promptText="Lunch" />
+      <TextField fx:id="price" layoutX="169.0" layoutY="96.0" prefHeight="25.0" prefWidth="262.0" promptText="\\$$$" />
+      <TextField fx:id="zip" layoutX="169.0" layoutY="132.0" prefHeight="25.0" prefWidth="262.0" promptText="99356" />
+      <TextField fx:id="cat2" layoutX="169.0" layoutY="206.0" prefHeight="25.0" prefWidth="262.0" promptText="Breakfast" />
+      <TextField fx:id="cat3" layoutX="169.0" layoutY="244.0" prefHeight="25.0" prefWidth="262.0" promptText="Drinks" />
+      <Button fx:id="submitButton" layoutX="483.0" layoutY="339.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="40.0" prefWidth="83.0" text="submit" textFill="#276f39">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="37.0" layoutY="339.0" mnemonicParsing="false" onAction="#goBacktoLogin" prefHeight="40.0" prefWidth="62.0" text="Back" textFill="#276f39">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Password" layoutX="169.0" layoutY="288.0" prefHeight="25.0" prefWidth="262.0" promptText="******" />
+      <Text layoutX="37.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Password :" wrappingWidth="122.6181640625">
+         <font>
+            <Font name="Calibri Italic" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
