@@ -1,2 +1,3 @@
 # 1-2-project
-1-2 project Zipped Bites
+ZIPPED BITES
+> A project on Food Delivery System made using JavaFX
